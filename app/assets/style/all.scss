@@ -54,7 +54,7 @@
 }
 
 // 經典系列鏡框
-.class{
+.classic{
 	margin-bottom: 80px;
   h2{
     color: #650300;
@@ -81,6 +81,7 @@
     font-style: italic;
   }
 }
+
 // 聯名設計鏡框
 .co-branding{
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
@@ -136,6 +137,7 @@
   }
 }
 
+// 聯絡我們
 .contact{
 	background-color: $secondary;
   height: 780px;
@@ -166,60 +168,78 @@
 
 
 
+// RWD
 
-
-/* RWD */
 @media (max-width:768px){
-	/* for all */
-	h2{
-		font-size: 32px;
-	}
-	span{
-		font-size: 32px;
-	}
-}
-
-	/* header */
-.header{
-	padding-left: 39px;
-	padding-right: 39px;
-   ul li{
-     margin-left: 40px;
-   }
-}
-
-/* banner */
-.banner{
-	height: 840px;
-	background-position:center;
-	background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
-	background-repeat:no-repeat;
-  .words{
-    text-align: right;
-    position: relative;
-    top: 35%;
-    right: 22%;
-    color:#650300;
-    line-height: 49.5px;
+  // for all
+  h2{
+  	font-size: 32px;
   }
-  p{
-    font-size: 20px;
+  span{
+  	font-size: 32px;
   }
-  h1{
-    font-size: 48px;
-    font-weight: 900;
+  // 看得清，才能看得遠
+  .banner{
+  	height: 840px;
+  	background-position:center;
+  	background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  	background-repeat:no-repeat;
+    .words{
+      text-align: right;
+      position: relative;
+      top: 35%;
+      right: 22%;
+      color:#650300;
+      line-height: 49.5px;
+    }
+    p{
+      font-size: 20px;
+    }
+    h1{
+      font-size: 48px;
+      font-weight: 900;
+    }
+  }
+  
+  // 用專業的心，做專業的事
+  .profession{
+  	padding-bottom: 56px;
+    img{
+      margin-top: 40.33px;
+      height: 83.83px;
+    }
+  }
+  
+  .classic{
+    margin-bottom: 56px;
+
+    .container{
+      max-width: 768px;
+      .left, .right{
+        margin: 0;
+        .pic{
+          height: 168px;
+          width: 390px;
+        }
+      }
+    }
+  }
+
+  // 聯名設計鏡框
+  .co-branding{
+    .container{
+      max-width: 768px;
+      height: 452px;
+    }
+    .box{
+      max-height: 278px;
+      max-width: 330px;
+      p{
+        font-size: 32px;
+        text-align: center;
+      }
+    }
   }
 }
-
- 
-/* profession */
-.profession{
-	padding-bottom: 56px;
-  img{
-    margin-top: 40.33px;
-    height: 83.83px;
-  }
-}
-
 
 
